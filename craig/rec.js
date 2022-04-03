@@ -211,7 +211,7 @@ function session(msgOrInteraction, prefix, rec) {
     cc.recordingEvents.emit("start", rec);
 
     // Send the recording message
-    const nowRecFile = "data/nowrecording.opus";
+    /*const nowRecFile = "data/nowrecording.opus";
     setTimeout(async () => {
         try {
             await fsp.access(nowRecFile);
@@ -226,7 +226,7 @@ function session(msgOrInteraction, prefix, rec) {
             }
             connection.play(nowRecFile, { format: "ogg" });
         } catch (e) {}
-    }, 200);
+    }, 200);*/
 
     // Active users, by ID
     var users = {};
